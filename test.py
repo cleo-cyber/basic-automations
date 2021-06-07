@@ -1,8 +1,10 @@
 import random
+lower_case=['a',"b","c","d","e"]
+upper_case=["A","B","C","D","E"]
+special_char=["!","@","%","^","*"]
+numbres=["1","2","3","4","5"]
 
-uppercase=["A","B","C","D"]
-lowecase=["a","b","c""d"]
-numbre=[1,2,3,4]
-special=["#","*","^","%"]
-password=random.choice(lowecase) + random.choice(uppercase) +str(random.choice(numbre)) +str(random.choice(special))
+password=random.choice(lower_case)+random.choice(upper_case)+random.choice(special_char)+random.choice(numbres)
+password+=password+password
+
 print(password)
